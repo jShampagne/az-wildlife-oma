@@ -17,9 +17,9 @@ const Footer = () => (
       </StyledP>
       </StyledDiv>
       <LogoBox>
-        <a href="www.facebook.com"><FaFacebookSquare /></a>
-        <a href="www.twitter.com"><FaTwitterSquare /></a>
-        <a href="www.youtube.com"><FaYoutubeSquare /></a>
+        <a href="www.facebook.com"><FaFacebookSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
+        <a href="www.twitter.com"><FaTwitterSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
+        <a href="www.youtube.com"><FaYoutubeSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
       </LogoBox>
     </StyledFooter>
     
