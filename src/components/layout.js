@@ -4,13 +4,14 @@
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import MainSection from "./MainSection"
+
+import 'semantic-ui-less/semantic.less'
+import "../styles/layout.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,7 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <MainSection />
         <div
           style={{
             margin: `0 auto`,
