@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
-import Form from './Form'
+import Contact from './Contact'
 
 const FormSection = ({ className, siteTitle }) => (
     <StaticQuery query={graphql`
@@ -21,22 +21,15 @@ const FormSection = ({ className, siteTitle }) => (
        // Set ImageData.
        const imageData = data.desktop.childImageSharp.fluid
        return (
-      
+        <div class="ui vertical masthead center aligned segment">
           <BackgroundImage 
             Tag="section"
             className={className}
             fadeIn={'soft'}
             fluid={imageData}
-          >
-            <TitleDiv>
-              <Title>
-                Stay In Touch
-              </Title>
-            </TitleDiv>
-            <FormDiv>
-              <Form />
-            </FormDiv>
-          </BackgroundImage>
+          />
+            <Contact />
+          </div>
        )
      }
     }
@@ -46,36 +39,14 @@ const FormSection = ({ className, siteTitle }) => (
 const StyledFormSection = styled(FormSection)`
   width: 98%;
   margin-left: 1%;
-  height: 600px;
+  height: 400px;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
   padding-bottom: 0rem;
+  position: relative;
   background-color: 'black';
   z-index: -1;
-`
-const TitleDiv = styled.div`
-  border-top: 2px solid brown;
-  border-bottom: 2px solid brown;
-  margin-top: 2rem;
-  margin-right: 30%;
-  margin-left: 30%;
-`
-const Title = styled.h3`
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding: 1rem;
-  color: brown;
-  letter-spacing: 1rem;
-`
-
-const FormDiv = styled.div`
-  justify-content: center;
-  margin-right: 30%;
-  margin-left: 34%;
-  margin-top: 2rem;
 `
 
 export default StyledFormSection

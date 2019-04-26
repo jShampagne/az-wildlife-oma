@@ -23,31 +23,31 @@ const MainDiv = styled.div`
   justify-content: center;
   z-index: 5;
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 50%;
-  width: 800px;
-  height: 450px;
+  width: 33em;
+  height: 19em;
   background: rgba(86,108,62, 0.8);
 `
 const BorderDiv = styled.div`
   border: 1px solid white; 
-  padding : 1rem;
+  padding : 1em;
   margin: 20px;
-  height: 410px;
+  height: 17em;
 `
 const TitleDiv = styled.div`
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  margin-top: 2rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
+  margin-top: 1em;
+  margin-right: 5rem;
+  margin-left: 5rem;
 `
 const Title = styled.h3`
   color: white;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
 `
 const StyledP = styled.p`
   color: white;
@@ -55,12 +55,12 @@ const StyledP = styled.p`
   padding-top: 2rem;;
   padding-left: 3rem;
   padding-right: 3rem;
-  font-size: 1.45rem;
+  font-size: 0.9em;
 `
 const Button = styled.button`
   background: lightgrey;
-  height: 3rem;
-  width: 250px;
+  height: 3em;
+  width: 8em;
   color: rgb(86,108,62);
   font-size: 1.1rem;
   text-transform: uppercase;

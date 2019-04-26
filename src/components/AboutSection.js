@@ -41,7 +41,7 @@ const StyledAboutSection = styled(AboutSection)`
   background-repeat: repeat-y;
   background-size: cover;
   padding-bottom: 0rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   background-color: 'black';
   z-index: -1;
 `

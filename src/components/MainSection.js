@@ -31,6 +31,7 @@ const MainSection = ({ className, siteTitle }) => (
             className={className}
             fadeIn={'soft'}
             fluid={imageData}
+            style={{ backgroundSize: '100% 100%'}}
           />
           <GreetingCard />
         </div>

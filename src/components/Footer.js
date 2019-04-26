@@ -47,7 +47,7 @@ const LogoBox = styled.div`
   font-size: 2rem;
   float: left;
   flex: column;
-  padding-left: 45%;
+  padding-left: 30%;
   padding-top: 1.4rem;
 `
 
