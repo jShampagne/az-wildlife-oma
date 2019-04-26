@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import 'semantic-ui-less/semantic.less'
+import '../styles/layout.css'
 
 export const query = graphql`
   {
@@ -42,6 +43,7 @@ const Stories = ({ data }) => (
 
 const MainDiv = styled.div`
   justify-content: center;
+  margin: 1em;
 `
 const LinkDiv = styled.div`
   margin-top: 1em;

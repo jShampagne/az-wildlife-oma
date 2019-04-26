@@ -28,8 +28,8 @@ const FormSection = ({ className, siteTitle }) => (
             fadeIn={'soft'}
             fluid={imageData}
           />
-            <Contact />
-          </div>
+          <Contact />
+        </div>
        )
      }
     }
