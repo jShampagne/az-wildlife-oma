@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
@@ -12,10 +11,10 @@ const Header = ({ siteTitle }) => (
       <LogoBox>
         <StyledImg src={logo} />
       </LogoBox>
-        <a href='#home' className="active item header-item">
+        <a href='/' className="active item header-item">
           Conserve & Protect
         </a>
-        <a href='#about' className="item header-item">
+        <a href='/stories' className="item header-item">
           Stories
         </a>
         <a href='#services' class="item">
