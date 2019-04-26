@@ -40,11 +40,12 @@ const TitleDiv = styled.div`
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-top: 2rem;
-  margin-right: 8rem;
-  margin-left: 8rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
 `
 const Title = styled.h3`
   color: white;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 1rem;

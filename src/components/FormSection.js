@@ -26,7 +26,14 @@ const FormSection = ({ className, siteTitle }) => (
             className={className}
             fadeIn={'soft'}
             fluid={imageData}
-          />
+          >
+            <TitleDiv>
+              <Title>
+                Stay In Touch
+              </Title>
+            </TitleDiv>
+          
+          </BackgroundImage>
        )
      }
     }
@@ -44,6 +51,21 @@ const StyledFormSection = styled(FormSection)`
   background-color: 'black';
   z-index: -1;
 `
-
+const TitleDiv = styled.div`
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+  margin-top: 2rem;
+  margin-right: 30%;
+  margin-left: 30%;
+`
+const Title = styled.h3`
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1rem;
+  color: brown;
+  letter-spacing: 1rem;
+`
 
 export default StyledFormSection

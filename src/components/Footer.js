@@ -8,20 +8,20 @@ import {
 } from 'react-icons/fa'
 
 const Footer = () => (
-    <StyledFooter>
-      <StyledDiv>
+  <StyledFooter>
+    <StyledDiv>
       <StyledP>
         Looking for information on licenses,recreation and AZGFD news? Visit our main site <FaArrowRight style={{paddingLeft: 5}}/><br/>
         Copyright @ 2018, Arizona Game and Fish Department. All rights reserved . Privacy Policy
         <FaArrowRight style={{paddingLeft: 5}}/>
       </StyledP>
-      </StyledDiv>
-      <LogoBox>
-        <a href="www.facebook.com"><FaFacebookSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
-        <a href="www.twitter.com"><FaTwitterSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
-        <a href="www.youtube.com"><FaYoutubeSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
-      </LogoBox>
-    </StyledFooter>
+    </StyledDiv>
+    <LogoBox>
+      <a href="www.facebook.com"><FaFacebookSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
+      <a href="www.twitter.com"><FaTwitterSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
+      <a href="www.youtube.com"><FaYoutubeSquare style={{ color: 'rgb(167, 92, 46)'}} /></a>
+    </LogoBox>
+  </StyledFooter>
     
 )
 
