@@ -39,7 +39,7 @@ const MainDiv = styled.div`
 const LogoBox = styled.div`
   position: absolute;
   top: 1rem;
-  left: 2rem;
+  left: 1em;
   margin-right: 4rem;
 `
 

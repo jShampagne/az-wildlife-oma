@@ -22,8 +22,6 @@ const MainSection = ({ className, siteTitle }) => (
        // Set ImageData.
        const imageData = data.desktop.childImageSharp.fluid
        return (
-      
-
         <div class="ui vertical masthead center aligned segment">
           <Header />
           <BackgroundImage 

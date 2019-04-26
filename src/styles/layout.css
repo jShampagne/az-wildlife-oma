@@ -634,3 +634,8 @@ pre tt:after {
 .field.half {
   margin-top: 0.5em;
 }
+
+.gallery-link {
+  font-size: 1.6rem;
+  padding-top: 3em;
+}
