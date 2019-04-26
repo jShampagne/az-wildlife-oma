@@ -3,13 +3,11 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
-import Header from './Header'
-import GreetingCard from './GreetingCard'
 
-const MainSection = ({ className, siteTitle }) => (
+const AboutSection = ({ className, siteTitle }) => (
     <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "main-photo.jpg" }) {
+        desktop: file(relativePath: { eq: "about-image.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
@@ -23,34 +21,30 @@ const MainSection = ({ className, siteTitle }) => (
        const imageData = data.desktop.childImageSharp.fluid
        return (
       
-
-        <div class="ui vertical masthead center aligned segment">
-          <Header />
           <BackgroundImage 
             Tag="section"
             className={className}
             fadeIn={'soft'}
             fluid={imageData}
           />
-          <GreetingCard />
-        </div>
        )
      }
     }
   />
 )
 
-const StyledMainSection = styled(MainSection)`
+const StyledAboutSection = styled(AboutSection)`
   width: 98%;
   margin-left: 1%;
-  height: 85vh;
+  height: 900px;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
   padding-bottom: 0rem;
+  margin-bottom: 1rem;
   background-color: 'black';
   z-index: -1;
 `
 
 
-export default StyledMainSection
+export default StyledAboutSection

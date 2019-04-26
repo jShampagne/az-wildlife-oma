@@ -9,6 +9,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import MainSection from "./MainSection"
+import AboutSection from './AboutSection'
+import FormSection from './FormSection'
+import Footer from './Footer'
 
 import 'semantic-ui-less/semantic.less'
 import "../styles/layout.css"
@@ -27,21 +30,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <MainSection />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
+        <AboutSection />
+        <FormSection />
+        <Footer />
       </>
     )}
   />
