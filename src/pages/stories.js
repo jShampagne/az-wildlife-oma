@@ -1,33 +1,30 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-// export const query = graphql`
-//   {
-//     allSanityPost {
-//         edges {
-//           node {
-//             id
-//             title
-//             mainImage {
-//               asset {
-//                 fluid {
-//                   ...GatsbySanityImageFluid
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-// `;
+export const query = graphql`
+  {
+    allSanityPost {
+      edges {
+        node {
+          id
+          title
+        }
+      }
+    }
+  }
+`;
 
-// import Img from 'gatsby-image'
 
 const Stories = ({ data }) => (
     <div className="container">
       <Link className="gallery-link" to='/'>Go Back</Link>
-      <h1> Hello World </h1>
+      {data.allSanityPost.edges.map(({ node: post }) => (
+        <div key={post.id}>
+          <h3>{post.title}</h3>
+        </div>
+      )
+      )}
     </ div> 
   )
 

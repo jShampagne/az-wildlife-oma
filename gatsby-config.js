@@ -15,6 +15,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'lhxofcx1',
+        dataset: 'production',
+        // a token with read permissions is required
+        // if you have a private dataset
+        watchMode: true,
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
