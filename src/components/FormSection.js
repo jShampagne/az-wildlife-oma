@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
+import Form from './Form'
 
 const FormSection = ({ className, siteTitle }) => (
     <StaticQuery query={graphql`
@@ -32,7 +33,9 @@ const FormSection = ({ className, siteTitle }) => (
                 Stay In Touch
               </Title>
             </TitleDiv>
-          
+            <FormDiv>
+              <Form />
+            </FormDiv>
           </BackgroundImage>
        )
      }
@@ -43,7 +46,7 @@ const FormSection = ({ className, siteTitle }) => (
 const StyledFormSection = styled(FormSection)`
   width: 98%;
   margin-left: 1%;
-  height: 500px;
+  height: 600px;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
@@ -66,6 +69,13 @@ const Title = styled.h3`
   padding: 1rem;
   color: brown;
   letter-spacing: 1rem;
+`
+
+const FormDiv = styled.div`
+  justify-content: center;
+  margin-right: 30%;
+  margin-left: 34%;
+  margin-top: 2rem;
 `
 
 export default StyledFormSection
