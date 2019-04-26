@@ -620,3 +620,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.pointing.menu {
+  padding-left: 20rem;
+}
+
+.brown.button {
+  margin-bottom: 0.5rem;
+}
+.ui.card {
+  background-color: '#566c3e';
+}

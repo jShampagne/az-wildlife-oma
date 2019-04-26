@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
 import Header from './Header'
+import GreetingCard from './GreetingCard'
 
 const MainSection = ({ className, siteTitle }) => (
     <StaticQuery query={graphql`
@@ -31,6 +32,7 @@ const MainSection = ({ className, siteTitle }) => (
             fadeIn={'soft'}
             fluid={imageData}
           />
+          <GreetingCard />
         </div>
        )
      }
